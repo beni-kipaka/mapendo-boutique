@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'">
+<title>Mapendo Inc Boutik | Habillement et divers</title>
+<meta name="description" content="Mapendo Inc Boutik : habillement et divers pour homme, femme et enfant. Choisissez vos articles et commandez directement sur WhatsApp.">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="canonical" href="https://mapendo-boutique.vercel.app/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mapendo Inc Boutik">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Mapendo Inc Boutik | Habillement et divers">
+<meta property="og:description" content="Habillement et divers. Choisissez vos articles et commandez sur WhatsApp.">
+<meta property="og:url" content="https://mapendo-boutique.vercel.app/">
+<meta property="og:image" content="https://mapendo-boutique.vercel.app/assets/logo.png">
+<meta property="og:image:alt" content="Logo Mapendo Inc Boutik">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mapendo Inc Boutik">
+<meta name="twitter:description" content="Habillement et divers. Commandez sur WhatsApp.">
+<meta name="twitter:image" content="https://mapendo-boutique.vercel.app/assets/logo.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"Mapendo Inc Boutik","url":"https://mapendo-boutique.vercel.app","logo":"https://mapendo-boutique.vercel.app/assets/logo.png","slogan":"Habillement et divers"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/app.js" defer></script>
+</head>
+<body data-page="shop">
+<a class="skip" href="#catalogue">Aller au catalogue</a>
+<header class="hd"><div class="wrap hd-in">
+  <a class="logo" href="./" aria-label="Mapendo Inc Boutik, accueil">
+    <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M12 11l4-7 4 7 4-7 4 7-1 4H13z" fill="var(--ac)"/><path d="M8 37V19l12 10 12-10v18" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/></svg>
+    <span>Mapendo<small>Inc Boutik</small></span></a>
+  <nav class="nav" id="nav" aria-label="Principal"><a href="#catalogue">Catalogue</a><a href="#confiance">Pourquoi nous</a><a href="#avis">Avis</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+  <form class="hs" role="search"><input id="hq" type="search" placeholder="Rechercher des articles" aria-label="Rechercher des articles" maxlength="60"></form>
+  <div class="tools">
+    <button id="theme" class="ic" type="button" aria-label="Changer de thème"></button>
+    <button id="cartBtn" class="ic" type="button" aria-label="Ouvrir le panier"><span data-i="bag"></span><span id="cnt" class="cnt">0</span></button>
+    <button id="burger" class="ic burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</div></header>
+
+<main>
+<section class="hero wrap">
+  <div>
+    <h1>Habillez-vous comme <span class="gd">quelqu'un qui compte.</span></h1>
+    <p>Vêtements, chaussures, accessoires et bien plus. Vous choisissez, nous préparons, vous commandez en deux clics sur WhatsApp.</p>
+    <div class="cta"><a class="btn" href="#catalogue">Voir le catalogue</a><a class="btn ghost" id="heroWa" href="#contact" rel="noopener">Nous écrire</a></div>
+  </div>
+  <div class="panel"><img src="assets/hero.svg" width="800" height="900" alt="Robe élégante sur cintre"></div>
+</section>
+
+<div class="mq" aria-hidden="true"><div><span>Homme</span><span>Femme</span><span>Enfant</span><span>Chaussures</span><span>Accessoires</span><span>Homme</span><span>Femme</span><span>Enfant</span><span>Chaussures</span><span>Accessoires</span></div></div>
+
+<section id="catalogue" class="wrap sec">
+  <h2>Le catalogue</h2>
+  <div class="bar">
+    <input id="q" type="search" placeholder="Chercher un article" aria-label="Chercher un article" maxlength="60">
+    <select id="sort" aria-label="Trier"><option value="new">Nouveautés</option><option value="asc">Prix croissant</option><option value="desc">Prix décroissant</option></select>
+  </div>
+  <div id="chips" class="chips" role="group" aria-label="Catégories"></div>
+  <div id="grid" class="grid" aria-live="polite"></div>
+</section>
+
+<section id="confiance" class="wrap sec">
+  <h2>Commander sans stress</h2>
+  <div class="trust mt">
+    <div><span data-i="wa"></span><h3>Commande sur WhatsApp</h3><p class="mu">Votre panier part directement vers la boutique. Pas de compte à créer.</p></div>
+    <div><span data-i="doc"></span><h3>Facture de preuve</h3><p class="mu">Chaque commande génère une facture en PDF ou image, prête à envoyer.</p></div>
+    <div><span data-i="shield"></span><h3>Confirmation humaine</h3><p class="mu">La boutique confirme le stock, le prix et la livraison avec vous avant tout paiement.</p></div>
+  </div>
+</section>
+
+<section id="avis" class="wrap sec">
+  <h2>Ils nous font confiance</h2>
+  <div id="rev" class="rev mt" aria-label="Avis clients"></div>
+</section>
+
+<section id="faq" class="wrap sec">
+  <h2>Questions fréquentes</h2>
+  <div class="faq mt">
+    <details><summary>Comment passer commande ?</summary><p>Ajoutez vos articles au panier, remplissez votre nom et votre téléphone, puis envoyez la commande sur WhatsApp avec votre facture.</p></details>
+    <details><summary>Faut-il créer un compte ?</summary><p>Non. Aucun compte n'est nécessaire, tout se fait en quelques clics.</p></details>
+    <details><summary>Quand est-ce que je paie ?</summary><p>Jamais avant confirmation. La boutique vérifie le stock, le prix et la livraison avec vous, puis vous convenez du paiement.</p></details>
+    <details><summary>Comment fonctionne la livraison ?</summary><p>Indiquez votre adresse dans la commande. La boutique confirme le délai et le coût de livraison par WhatsApp.</p></details>
+    <details><summary>Puis-je échanger un article ?</summary><p>Écrivez-nous dès réception avec une photo : nous trouvons ensemble la meilleure solution selon la taille et le stock.</p></details>
+    <details><summary>À quoi sert la facture ?</summary><p>C'est votre preuve de commande, en PDF ou image. Conservez-la et joignez-la à votre message WhatsApp.</p></details>
+  </div>
+</section>
+
+<section id="contact" class="wrap sec">
+  <div class="cbox">
+    <div class="cinfo"><h2>Une question sur un article ?</h2><p class="mu">Remplissez le formulaire : votre message part directement sur WhatsApp, avec toutes les infos utiles pour une réponse rapide.</p><a id="contactWa" class="btn ghost" href="#" rel="noopener">Ou discuter directement</a></div>
+    <form id="cf" class="f cform" novalidate>
+      <div class="two"><label>Nom<input name="name" required maxlength="60" autocomplete="name"></label>
+      <label>Téléphone<input name="tel" type="tel" required maxlength="20" autocomplete="tel" inputmode="tel" placeholder="+243 ..."></label></div>
+      <div class="two"><label>Email (facultatif)<input name="mail" type="email" maxlength="80" autocomplete="email"></label>
+      <label>Sujet<select name="subj"><option>Question sur un article</option><option>Suivi de commande</option><option>Livraison</option><option>Échange ou retour</option><option>Autre</option></select></label></div>
+      <fieldset class="opt"><legend>Comment vous répondre ?</legend><label><input type="radio" name="how" value="WhatsApp" checked> WhatsApp</label><label><input type="radio" name="how" value="Appel"> Appel</label></fieldset>
+      <label>Message<textarea name="msg" rows="4" required maxlength="500" placeholder="Article, taille, couleur..."></textarea><small class="mu" id="mc">0 / 500</small></label>
+      <label class="ck"><input type="checkbox" name="ok" required> J'accepte d'être recontacté au sujet de ma demande.</label>
+      <p class="err" id="cerr" role="alert"></p>
+      <button class="btn wa" type="submit">Envoyer sur WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="ft"><div class="wrap">
+  <div class="fbadges"><div><span data-i="shield"></span><b>Confirmation humaine</b><small>Stock et prix vérifiés avant paiement</small></div><div><span data-i="doc"></span><b>Facture incluse</b><small>Preuve de commande en PDF ou image</small></div><div><span data-i="wa"></span><b>Support WhatsApp</b><small>Réponse avec tailles et disponibilité</small></div></div>
+  <div class="fcols">
+    <div class="fb"><img src="assets/logo.png" width="150" height="84" alt="Mapendo Inc Boutik" loading="lazy"><p>Habillement et divers pour homme, femme et enfant. Choisissez en ligne, commandez sur WhatsApp.</p><div class="soc" id="soc" aria-label="Réseaux sociaux"></div></div>
+    <nav aria-label="Boutique"><h3>Boutique</h3><a href="#catalogue">Tous les articles</a><a href="#catalogue">Nouveautés</a><a href="#catalogue">Homme</a><a href="#catalogue">Femme</a><a href="#catalogue">Enfant</a></nav>
+    <nav aria-label="Aide"><h3>Aide</h3><a href="#faq">Questions fréquentes</a><a href="#confiance">Comment commander</a><a href="#avis">Avis clients</a><a href="#contact">Nous contacter</a></nav>
+    <div><h3>Contact</h3><a id="fWa" href="#" rel="noopener">WhatsApp</a><span class="fl">Kinshasa, RD Congo</span><a class="btn sm" href="#contact">Écrire à la boutique</a></div>
+  </div>
+  <div class="fbot"><small>© <span id="yr"></span> Mapendo Inc Boutik. Tous droits réservés.</small><small>Paiement confirmé directement avec la boutique</small><a class="top" href="#" id="up" aria-label="Retour en haut">↑ Haut de page</a></div>
+</div></footer>
+
+<div id="drawer" class="drawer" aria-hidden="true">
+  <div class="bk" data-close></div>
+  <aside class="pn" role="dialog" aria-modal="true" aria-label="Panier">
+    <header><h2 class="sm">Mon panier</h2><button class="ic" type="button" data-close aria-label="Fermer">✕</button></header>
+    <div class="bd" id="lines"></div>
+    <footer id="co">
+      <div class="row"><span>Total</span><b class="pr" id="total"></b></div>
+      <form id="form" class="f" novalidate autocomplete="on">
+        <label>Votre nom<input name="name" required maxlength="60" autocomplete="name"></label>
+        <label>Téléphone<input name="tel" type="tel" required maxlength="20" autocomplete="tel" inputmode="tel" placeholder="+243 ..."></label>
+        <label>Adresse de livraison<input name="addr" maxlength="120" autocomplete="street-address"></label>
+        <p class="err" id="err" role="alert"></p>
+        <button class="btn wa" type="submit">Commander et générer la facture</button>
+      </form>
+    </footer>
+    <div class="bd done" id="done" hidden></div>
+  </aside>
+</div>
+<a class="wf" id="wf" href="#" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><span data-i="wa"></span></a>
+<div id="toast" class="toast" role="status"></div>
+<noscript><p class="empty">Activez JavaScript pour parcourir la boutique.</p></noscript>
+</body>
+</html>
